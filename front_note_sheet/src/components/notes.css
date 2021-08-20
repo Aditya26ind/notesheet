@@ -1,0 +1,28 @@
+
+.noteKaclass{
+    display: flex;
+    flex-direction: row;
+    margin-left:60px ;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 50px;
+    padding: 18px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#btn1{
+    margin-left: 20px;
+    height: 30px;
+    margin-top: -5px;
+}
+#btn2{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: -5px;
+}
+#btn3{
+    position: absolute;
+    border-radius: 60%;
+    width: -10px;
+    height: 20px;
+    margin-left: -29px;
+}

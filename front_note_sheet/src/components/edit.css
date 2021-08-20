@@ -1,0 +1,43 @@
+#notingID{
+    position: absolute;
+    height: 300px;
+    width: 43%;
+    left: 23vw;
+    top:20vh;
+    border-radius: 20px;
+    box-shadow: 0px -3px 20px ;
+    border-style: none;
+   }
+
+   #editForm input[type="text"] {
+    text-align: center;
+  }
+   #notebtn{
+       position: absolute;
+       left: 23vw;
+       top:75vh;
+       width:43%;
+       border-radius: 20px;
+       box-shadow: 0px -3px 200px ;}
+   @media screen and (max-width:420px) {
+       #notingID{
+           width: 300px;
+           left:65px;
+           }
+       #notebtn{
+           width: 300px;
+           left:65px;
+   }
+   }
+   @media screen and (max-width:400px) {
+       #notingID{
+       width: 60%;
+       left:65px;
+       }
+   #notebtn{
+       width: 60%;
+       left:65px;
+   }
+   
+       
+   }

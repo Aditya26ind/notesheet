@@ -1,0 +1,68 @@
+#writing2{
+    position: absolute;
+    width:250px;
+    height: 250px;
+    margin-top:-59vh;
+    /* margin-left: 60vw; */
+    margin-left: 579px;
+  }
+  #form2{
+    position: absolute;
+    padding:100px;
+    width: 560px;
+    /* margin: 30vw; */
+    margin-left: auto;
+    margin-top: -35px;
+    
+  
+  
+  }
+  @media screen and (max-width:638px){
+    #writing2{
+      display:none;
+    }
+  }
+  @media screen and (max-width:500px){
+    #form2{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width:380px){
+    #form2{
+      /* width: 300px; */
+      margin-left: -15vw;
+    }
+  }
+  @media screen and (max-width:349px){
+    #form2{
+      margin-left: -25vw;
+    }
+  }
+  @media screen and (max-width:290px){
+    #form2{
+      width: 330px;
+      margin-left: -25vw;
+    }
+  }
+strong{
+  color:rgb(255, 122, 166);
+  padding-left: 20px;
+  font-style: italic;
+}
+#userCreatedright{
+  position: absolute;
+  margin-left: 40vw;
+  color: rgb(132, 228, 36);
+}
+#userCreatedwrong{
+  position: absolute;
+  margin-left: 40vw;
+  color: rgb(228, 36, 36);
+}
+/*user present display css*/
+#userPresent{
+  position: absolute;
+  margin-left: 33vw;
+  margin-top: 12vh;
+  color: rgb(228, 36, 36);
+}

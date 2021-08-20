@@ -1,0 +1,44 @@
+#writing{
+    position: absolute;
+    width:250px;
+    height: 250px;
+    margin-top:5vh;
+    margin-left: 60vw;
+  }
+  #form{
+    position: absolute;
+    padding:100px;
+    width: 500px;
+    /* margin: 30vw; */
+    margin-left: auto;
+    
+  
+  
+  }
+  @media screen and (max-width:638px){
+    #writing{
+      display:none;
+    }
+  }
+  @media screen and (max-width:500px){
+    #form{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width:380px){
+    #form{
+      /* width: 300px; */
+      margin-left: -15vw;
+    }
+  }
+  @media screen and (max-width:349px){
+    #form{
+      margin-left: -25vw;
+    }
+  }
+  @media screen and (max-width:290px){
+    #form{
+      width: 330px;
+      margin-left: -25vw;
+    }
+  }

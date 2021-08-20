@@ -1,0 +1,49 @@
+
+img{
+  position:static;
+  width: 30px;
+  height:30px;
+  margin-left:21vw ;
+  margin-top: 83vh;
+}
+@media  screen and (max-width:500px){
+  img{
+    margin-left: 18vw;
+  }
+}
+#logoTop {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  margin-left: 10px;
+  border-radius:50% ;
+}
+#nav:hover {
+  background: aqua;
+  border-radius: 40%;
+  box-shadow: 2px 1px 20px rgba(8, 230, 238);
+  
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  top: 218vh;
+}
+#copyright{
+  height: 500px;
+  position: absolute;
+  writing-mode: tb-rl; 
+  left:0;
+  margin-left: 0;
+  margin-top:50vh;
+  color: darkcyan;
+}
+@media  screen and (max-width:992px){
+  #nav:hover{
+    background:none;
+    border-radius: None;
+    box-shadow: none;
+  }
+}
