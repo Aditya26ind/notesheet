@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser, PermissionsMixin
 # Create your models here.
 class user_model(AbstractUser):
+    id = models.UUIDField(primary_key=True, unique=True)
     age=models.CharField(max_length=200,blank=True)
     password=models.CharField(max_length=8,blank=True)
     dob=models.CharField(max_length=200,blank=True)
