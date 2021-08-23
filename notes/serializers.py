@@ -11,7 +11,7 @@ class user_all_dataSerializers(WritableNestedModelSerializer):
     notes=userNotesSerializer(many=True)
     class Meta:
         model=user_model
-        fields=['username','dob',"phone","age",'notes']
+        fields=['id','username','dob',"phone","age",'notes']
 
 
 

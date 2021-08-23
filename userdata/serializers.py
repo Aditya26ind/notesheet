@@ -15,7 +15,7 @@ class user_model_serializers(UserCreationForm):
     class Meta:
         model=user_model
 
-        fields = ( 'username','password', 'email',"dob",'phone',"age")
+        fields = ("id", 'username','password', 'email',"dob",'phone',"age")
         extra_kwargs={'password': {'write_only': True}}
         def create(self, validated_data):
             user = user_model.objects.create_user(**validated_data)
