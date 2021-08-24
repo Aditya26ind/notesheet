@@ -14,7 +14,6 @@ from django.forms.models import model_to_dict
 class user_model_serializers(UserCreationForm):
     class Meta:
         model=user_model
-
         fields = ("id", 'username','password', 'email',"dob",'phone',"age")
         extra_kwargs={'password': {'write_only': True}}
         def create(self, validated_data):
