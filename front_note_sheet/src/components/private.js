@@ -9,18 +9,14 @@ import { Route ,useHistory,Redirect, useLocation, Switch} from "react-router-dom
   const forChecking=async()=>{
   if(localStorage.getItem("token")){
   const check={token:`${localStorage.getItem("token")}`}
-  await axios.post(`/api/token/verify/`,check)
-  .then(res=>console.log(res.data))
-  .catch(err=>{localStorage.clear();
-    console.log(err)
-  history.push('/login')})}}
+  await axios.post(`/api/token/verify/`,check).then(res=>setOn=true)
   useEffect(()=>{
     forChecking();
 },[]);
     return(
-        <Route {...rest}  
+        <Route {...rest} 
         render={ props=>
-            localStorage.getItem("token") ?
+            localStorage.getItem("token") && on==true ?
             <Component {...props}/>
               :
             <Redirect to={{pathname:"/login",state:{from:props.location}}}/>
