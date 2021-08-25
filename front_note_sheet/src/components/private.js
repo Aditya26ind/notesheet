@@ -9,7 +9,10 @@ import { Route ,useHistory,Redirect, useLocation, Switch} from "react-router-dom
   const forChecking=async()=>{
   if(localStorage.getItem("token")){
   const check={token:`${localStorage.getItem("token")}`}
-  await axios.post(`/api/token/verify/`,check).then(res=>res.data).catch(err=>{localStorage.clear();
+  await axios.post(`/api/token/verify/`,check)
+  .then(res=>console.log(res.data))
+  .catch(err=>{localStorage.clear();
+    console.log(err)
   history.push('/login')})}}
   useEffect(()=>{
     forChecking();
