@@ -6,7 +6,7 @@ from drf_writable_nested import WritableNestedModelSerializer
 class userNotesSerializer(serializers.ModelSerializer):
     class Meta:
         model=notes_by_user
-        fields=["note"]
+        fields=['id',"note"]
 class user_all_dataSerializers(WritableNestedModelSerializer):
     notes=userNotesSerializer(many=True)
     class Meta:
