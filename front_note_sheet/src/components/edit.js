@@ -19,7 +19,7 @@ function Editing(){
             note:notes.note,
         };
         // console.log(location.state.id,location.state.note)
-        await axios.post(`/loggedIn/update/1/${location.state.id}/`,data,{ headers: {"Authorization":`Bearer ${localStorage.getItem("token")}`} });
+        await axios.post(`/loggedIn/update/${localStorage.getItem("id")}/${location.state.id}/`,data,{ headers: {"Authorization":`Bearer ${localStorage.getItem("token")}`} });
         history.push("/notes")
     }
     return(
