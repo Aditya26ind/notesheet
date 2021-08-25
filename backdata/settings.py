@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$prqm(o%@hq2)u2jo@xnit%9xo#1&z!0qt=93ri9w81(wu&1v+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ["127.0.0.1","localhost","notesheet.herokuapp.com","127.0.0.1:8000"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'userdata',
     'notes',
+    'rest_framework_simplejwt.token_blacklist',
 ]
 
 MIDDLEWARE = [

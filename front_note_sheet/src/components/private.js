@@ -12,7 +12,7 @@ import { Route ,useHistory,Redirect, useLocation, Switch} from "react-router-dom
   await axios.post(`/api/token/verify/`,check).then(res=>setOn=true)
   useEffect(()=>{
     forChecking();
-},[]);
+},[])}};
     return(
         <Route {...rest} 
         render={ props=>
