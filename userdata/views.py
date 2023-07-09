@@ -23,10 +23,10 @@ class MyUserCreate(APIView):
     @permission_classes([IsAuthenticated])
     @authentication_classes([JWTAuthentication])
     def get(self,request,username):
-            user_dts = user_model.objects.filter(username=username)
-            serializer = user_model_serializers(user_dts)
-            model_to_dict=[ {"username":model["username"],"id":model["id"]}for model in serializer.data.values()]
-            return Response(model_to_dict)
+        user_dts = user_model.objects.filter(username=username)
+        serializer = user_model_serializers(user_dts)
+        model_to_dict=[ {"username":model["username"],"id":model["id"]}for model in serializer.data.values()]
+        return Response(model_to_dict)
             
 @api_view(["POST","GET","DELETE"])
 @permission_classes([IsAuthenticated])

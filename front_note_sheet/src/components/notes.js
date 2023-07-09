@@ -8,7 +8,7 @@ function NotesOfUser(){
    
     const loadnote=async ()=>{
     await axios.get(`/loggedIn/${localStorage.getItem("id")}/`,{ headers: {"Authorization":`Bearer ${localStorage.getItem("token")}`} })
-     .then(res=>res.data)
+     .then(res=>console.log(res.data))
      .then((data)=>{
          setAllNotes(data)
      })
